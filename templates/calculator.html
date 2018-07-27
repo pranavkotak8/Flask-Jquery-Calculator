@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iNventor's</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,200' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" type="text/css" href="animate.css"> -->
+	<link rel="icon" type="images" href="sun.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+	$('#ac').click(function(){
+		$('#ac').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val('');
+		});
+	});
+
+	$('#plus').click(function(){
+		$('#plus').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#-').click(function(){
+		$('#-').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#x').click(function(){
+		$('#x').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + '*' );
+		});
+	});
+
+	$('#7').click(function(){
+		$('#7').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#8').click(function(){
+		$('#8').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#9').click(function(){
+		$('#9').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#divide').click(function(){
+		$('#divide').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#4').click(function(){
+		$('#4').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#5').click(function(){
+		$('#5').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#6').click(function(){
+		$('#6').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#dot').click(function(){
+		$('#dot').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#1').click(function(){
+		$('#1').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#2').click(function(){
+		$('#2').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#3').click(function(){
+		$('#3').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#0').click(function(){
+		$('#0').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( $('#text').val() + $(this).val() );
+		});
+	});
+
+	$('#equals').click(function(){
+		$('#equals').addClass('btn-click').delay(100).queue(function(){
+			$(this).removeClass('btn-click').dequeue();
+			$('#text').val( eval( $('#text').val() ) );
+		});
+	});
+
+	$(".circle").click(function(e){
+
+		e.preventDefault();
+		$(".circle").removeClass("animated zoomIn").addClass("animated rubberBand").one("webkitAnimationEnd MSAnimationEnd oanimationend animationend", function(){
+			$(this).removeClass("animated rubberBand");	
+			window.open("home.html", "_self")
+		});
+
+	});
+
+});
+	</script>
+	<script type="text/javascript" src="calc.js"></script>
+	<style type="text/css">
+		body{
+			background-image: url(mountains.png);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: 100% 720px;
+		}
+		p{
+			padding: 8px;
+		}
+		#background{
+			width: 300px;
+			height: 400px;
+			border-radius: 5px;
+			border: 1px solid black; 
+			background: linear-gradient(#323232, #1F1F1F);
+			margin-top: 120px;
+			cursor: default;
+			opacity: 0.9;
+		}
+		#head{
+			color: white;
+			font-family: "roboto", sans-serif;
+			font-weight: 100;
+			margin-top: -5px;
+			font-size: 12px;
+			cursor: default;
+		}
+		#text{
+			width: 250px;
+			height: 40px;
+			padding: 2px;
+			margin-left: -5px;
+			border-radius: 5px;
+			border: 1px solid black;
+			background: linear-gradient(#3C3C3C, #303030);
+			color: white;
+			text-align: right;
+			font-size: 30px;
+			font-family: "roboto", sans-serif;
+			-webkit-animation-delay: 1s;
+		}
+		.btn-h{
+			width: 245px;
+			height: 40px;
+			margin: 5px;
+			margin-left: 5px;
+			border-radius: 5px;
+			color: white;
+			font-family: "Roboto", sans-serif;
+			font-weight: 100;
+			font-size: 15px;
+			border: 1px solid black;
+			outline: none;
+			background: linear-gradient(#3C3C3C, #303030);
+			cursor: pointer;
+		}
+		.btn{
+			width: 50px;
+			height: 40px;
+			margin: 5px;
+			margin-top: 10px;
+			border-radius: 5px;
+			color: white;
+			font-family: "Roboto", sans-serif;
+			font-weight: 100;
+			font-size: 15px;
+			border: 1px solid black;
+			outline: none;
+			background: linear-gradient(#3C3C3C, #303030);
+			cursor: pointer;
+		}
+		.btn-click{
+			background: linear-gradient(#303030, #3C3C3C);
+		}
+		.block{
+			display: inline-block;
+			-webkit-animation-delay: 1s;
+		}
+		.faltu{
+			height:25px;
+		}
+		.circle{
+			width: 15px;
+			height: 15px;
+			margin: 5px;
+			text-align: center;
+			background-color: red;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<center> <div id="background">
+
+		<!-- <div class="circle animated zoomIn" title="back to Menu"></div> -->
+
+		<div id="head" class="animated swing">
+			<p>Calculator</p>
+		</div>
+		<div class="animated bounceInDown">
+			<input type="text" name="input" id="text" placeholder="0">
+		</div>
+
+		<div>
+
+			<div class="faltu"></div>
+
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="ac" value="AC">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="plus" value="+">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="-" value="-">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="x" value="X">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="7" value="7">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="8" value="8">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="9" value="9">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="divide" value="/">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="4" value="4">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="5" value="5">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="6" value="6">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="dot" value=".">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="1" value="1">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="2" value="2">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="3" value="3">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn" id="0" value="0">
+			</div>
+			<div class="block animated zoomIn">
+				<input type="button" name="btn" class="btn-h" id="equals" value="=">
+			</div>
+		</div>
+
+	</div> </center>
+</body>
+</html>
