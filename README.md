@@ -6,7 +6,7 @@
 [![Twitter URL](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Flask%20micro-service%20deployed%20on%20Heroku(flask-calculator-api-heroku.herokuapp.com)%20https://github.com/junaidfiaz143/Flask-Jquery-Calculator&&via=junaidfiaz143&hashtags=Micro-Service,Flask,Heroku,Jquery,developer)
 
 In this project you will discover how to create Flask micro-service in python.
-You can see this project as running on -> [Here](https://flask-calculator-api-heroku.herokuapp.com)
+You can see this project as running on [Here](https://flask-calculator-api-heroku.herokuapp.com)
 
 ## Getting Started
 
@@ -44,7 +44,7 @@ Add additional notes about how to deploy this on a live system -->
 ## Built With
 
 * [python](https://www.python.org/) - Programming Language
-* [tensorflow](http://flask.pocoo.org/) - Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions.
+* [flask](http://flask.pocoo.org/) - Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions.
 * [jQuery](https://jquery.com/) - jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.
 
 ## Authors
